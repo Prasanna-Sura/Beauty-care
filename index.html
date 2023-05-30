@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Care Center</title>
+    <style>
+      h2 {
+        background-color: #2f4f4f;
+        color: white;
+        height: 30px;
+        text-align: center;
+        font-size: 150%;
+        border-radius: 6px;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: #4f4abb;
+      }
+
+      #submit {
+        background-color: black;
+        color: rgb(194, 189, 171);
+        border-radius: 5%;
+      }
+      #submit:hover {
+        border-color: #d9d7d7;
+        background-color: #eee8e8;
+        color: black;
+      }
+
+      td,
+      th {
+        border: 1px solid #98673c;
+        height: 25px;
+        padding-left: 1%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 3%;
+      }
+      .form1 {
+        border-color: 2px solid black;
+        border: 2px solid white;
+        padding: 4%;
+        padding-top: 1%;
+        width: 60%;
+        margin-left: 20%;
+      }
+      table {
+        width: 100%;
+        height: 90%;
+      }
+      placeholder {
+        color: #1824a9;
+      }
+      .formbutton:hover {
+        background-color: beige;
+        color: black;
+      }
+    </style>
+  </head>
+  <body style="background-color: black; color: white; width: 100%">
+    <form class="form1">
+      <h2>Beauty Care Center-Appointment</h2>
+      <table>
+        <tbody>
+          <!-- 1st row -Name -->
+          <tr>
+            <td><label for="name">Name*</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                name="name"
+                style="
+                  width: 90%;
+                  border-color: #f8b388;
+                  border-radius: 6px;
+                  background-color: black;
+                  color: white;
+                " />
+            </td>
+            <!-- 2nd row -Gender -->
+          </tr>
+          <tr>
+            <td>
+              <label for="gender">Gender*</label>
+            </td>
+            <td>
+              <input type="radio" id="male" name="gender" />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Female</label>
+              <input type="radio" id="others" name="gender" />
+              <label for="others">Others</label>
+            </td>
+          </tr>
+          <!-- 3rd row -Email -->
+          <tr>
+            <td>
+              <label for="email">E-mail address</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Example:abc@gmail.com"
+                style="
+                  width: 90%;
+                  border-color: #f8b388;
+                  border-radius: 6px;
+                  background-color: black;
+                  color: white;
+                " />
+            </td>
+          </tr>
+          <!-- 4rth row -MOBILE NUMBER -->
+          <tr>
+            <td>
+              <label for="mob num">Mobile No*</label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                id="mob num"
+                name="mobile num"
+                pattern="[0-9]{10}"
+                placeholder="Enter your mobile number"
+                style="
+                  width: 90%;
+                  border-color: #f8b388;
+                  border-radius: 6px;
+                  background-color: black;
+                  color: white;
+                " />
+            </td>
+          </tr>
+          <!-- 5th row -Services -->
+          <tr>
+            <td><label for="services">Services*</label></td>
+            <td>
+              <input
+                type="text"
+                id="services"
+                name="services"
+                style="
+                  width: 90%;
+                  border-color: #f8b388;
+                  border-radius: 6px;
+                  background-color: black;
+                  color: white;
+                " />
+            </td>
+          </tr>
+          <!-- 7th row -Date -->
+          <tr>
+            <td>
+              <label for="date">Date*</label>
+            </td>
+            <td>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                style="
+                  width: 90%;
+                  border-color: #f8b388;
+                  border-radius: 6px;
+                  background-color: black;
+                  color: #4f4abb;
+                " />
+            </td>
+          </tr>
+          <!-- 8th row -Time -->
+          <tr>
+            <td>
+              <label for="time">Time*</label>
+            </td>
+            <td>
+              <input
+                type="time"
+                id="time"
+                name="time"
+                style="
+                  width: 90%;
+                  border-color: #f8b388;
+                  border-radius: 6px;
+                  background-color: black;
+                  color: #4f4abb;
+                " />
+            </td>
+          </tr>
+          <!-- 9th row -Address -->
+          <tr>
+            <td>
+              <label for="address">Address</label>
+            </td>
+            <td>
+              <textarea
+                name="address"
+                id="address"
+                cols="15"
+                rows="5"
+                placeholder="Enter your address"
+                style="
+                  width: 90%;
+                  border-color: #f8b388;
+                  border-radius: 6px;
+                  background-color: black;
+                  color: white;
+                "></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="checkbox" id="checkbox" name="checkbox" required />
+      <label for="checkbox">
+        <a href="" style="color: #0095b4"
+          >I agree to terms of service and privacy policy</a
+        > </label
+      ><br /><br />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
